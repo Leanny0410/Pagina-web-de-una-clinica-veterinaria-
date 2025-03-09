@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clínica Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="banner">
+        <div class="container text-center">
+            <h1>🐾 Bienvenidos a Nuestra Clínica Veterinaria 🐾</h1>
+            <p>Cuidamos de tus mascotas con amor y profesionalismo.</p>
+            <img src="imagen3.jpg" alt="Banner" class="img-fluid">
+            <button class="btn btn-lg btn-accent mt-3" onclick="window.location.href='agendar.html'">Agendar Cita</button>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg" class="card-img-top" alt="Consulta General">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-stethoscope"></i> Consulta General</h5>
+                            <p class="card-text">Revisión completa de la salud de tu mascota.</p>
+                            <p class="card-text"><strong>Precio:</strong> $50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp" class="card-img-top" alt="Cirugías">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-procedures"></i> Cirugías</h5>
+                            <p class="card-text">Procedimientos quirúrgicos seguros y efectivos.</p>
+                            <p class="card-text"><strong>Precio:</strong> $200 - $500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png" class="card-img-top" alt="Peluquería">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-cut"></i> Peluquería</h5>
+                            <p class="card-text">Servicios de aseo y estética para mascotas.</p>
+                            <p class="card-text"><strong>Precio:</strong> $30 - $80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center equipo">
+                    <img src="doc2.jpg" class="rounded-circle img-fluid" alt="Dra. Mila López">
+                    <h5>Dra. Mila López</h5>
+                    <p>Veterinaria General</p>
+                    <p>Especialista en medicina interna.</p>
+                </div>
+                <div class="col-md-4 text-center equipo">
+                    <img src="doc1.jpg" class="rounded-circle img-fluid" alt="Dr. Neider Garcia">
+                    <h5>Dr. Neider Garcia</h5>
+                    <p>Cirujano Veterinario</p>
+                    <p>Experto en cirugías complejas.</p>
+                </div>
+                <div class="col-md-4 text-center equipo">
+                    <img src="doc3.jpg" class="rounded-circle img-fluid" alt="Dra. Lorna De Jesus">
+                    <h5>Dra. Lorna De Jesus</h5>
+                    <p>Especialista en Peluquería</p>
+                    <p>Cuidado estético y bienestar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card contact-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Contacto</h5>
+                            <p class="card-text">+12-3456-789012-345</p>
+                            <a href="https://wa.me/123456789012345" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="mb-0">Dirección: Calle Principal #1715, Ciudad</p>
+                    <p class="mb-0">Horarios: Lunes a Viernes, 9am - 6pm</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirmación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por contactarnos! 😊 Tu mensaje ha sido enviado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
